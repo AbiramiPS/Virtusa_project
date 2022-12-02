@@ -21,7 +21,7 @@ public class Demo1Application implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		String sql = "INSERT INTO details(id, name, email, password) VALUES (?, ?, ?, ?)";
 
-		int result = jdbcTemplate.update(sql, 2, "Abi", "abi@gmail.com", "abi123");
+		int result = jdbcTemplate.update(sql, 2, "Abi", "abi@gmail.com", "12345");
 
 		if (result > 0) {
 			System.out.println("A new row has been inserted");
